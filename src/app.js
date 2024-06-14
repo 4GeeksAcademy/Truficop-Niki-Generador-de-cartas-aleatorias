@@ -34,6 +34,8 @@ function generateCard() {
   const randomNumbers = numberGenerator(NUMBERS);
   const cardHeaderElement = document.getElementById("header-symbol");
   const cardFooterElement = document.getElementById("footer-symbol");
+  cardHeaderElement.classList.remove("red");
+  cardFooterElement.classList.remove("red");
   if (randomSymbol === "♦" || randomSymbol === "♥") {
     cardHeaderElement.classList.add("red");
     cardFooterElement.classList.add("red");
