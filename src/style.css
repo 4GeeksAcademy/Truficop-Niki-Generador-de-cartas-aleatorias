@@ -1,1 +1,26 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  width: 350px;
+  height: 550px;
+}
+.cardHeader {
+  height: 25%;
+  font-size: 80px;
+}
+.cardBody {
+  height: 50%;
+  font-size: 120px;
+}
+.cardFooter {
+  height: 25%;
+  font-size: 80px;
+}
+.flip-vertical {
+  transform: scaleY(-1);
+}
+.red {
+  color: red;
+}

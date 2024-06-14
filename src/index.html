@@ -13,16 +13,39 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid d-flex justify-content-center mt-5">
+      <div class="card">
+        <div class="cardHeader text-start ms-4" id="header-symbol"></div>
+        <div class="cardBody text-center mt-5" id="body-symbol"></div>
+        <div
+          class="cardFooter text-end flip-vertical me-4"
+          id="footer-symbol"
+        ></div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center mt-5">
+      <button type="button" class="btn btn-primary" id="generateButton">
+        PRESS TO GENERATE
+      </button>
+    </div>
+    <div class="container justify-content-center mt-5 text-white">
+      <div class="mb-3">
+        <label for="inputWidth" class="form-label">Ancho de la Carta:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputWidth"
+          placeholder="Ancho en px"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="inputHeight" class="form-label">Alto de la Carta:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputHeight"
+          placeholder="Alto en px"
+        />
       </div>
     </div>
   </body>
